@@ -1,0 +1,9 @@
+                                          Documentação Requirejs
+
+# OPTIMIZE
+Once you are finished doing development and want to deploy your code for your end users, you can use the optimizer to
+combine the JavaScript files together and minify it. In the example above, it can combine main.js and helper/util.js
+into one file and minify the result.
+
+Link: http://requirejs.org/docs/optimization.html
+
