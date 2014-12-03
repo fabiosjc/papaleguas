@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Clearfix</title>	
+</head>
+<body>
+	
+<style type="text/css">
+	li{
+		float: left;
+		margin: 4px;
+		list-style: none;		
+	}
+
+	img{
+		vertical-align: top;
+	}
+
+	ul{
+		background-color: yellowgreen;
+		
+	}
+
+	.clearfix {
+		clear: both;
+	}
+
+	/*Outra opção é usar overflow: auto, no pai */
+	/*	
+		ul {
+	  		overflow: auto;
+		} 
+	*/
+</style>
+
+<ul>	
+	<li><img src="http://placehold.it/100x100&text=1"></li>
+	<li><img src="http://placehold.it/100x150&text=2"></li>
+	<li><img src="http://placehold.it/100x100&text=3"></li>
+	<li><img src="http://placehold.it/100x100&text=4"></li>
+	<li><img src="http://placehold.it/100x100&text=5"></li>
+	<li><img src="http://placehold.it/100x150&text=6"></li>
+	<li><img src="http://placehold.it/100x100&text=7"></li>
+ 	<div class="clearfix" ></div>
+</ul>
+
+</body>
+</html>

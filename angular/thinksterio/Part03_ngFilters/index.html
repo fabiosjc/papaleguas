@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Tutorials - ngFilters</title>
+    <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+</head>
+<body>
+
+<div ng-app="myApp">
+    <div ng-controller="AvengersCtrl">
+        <label>Filtrar</label>
+        <input type="text" ng-model="searchText" placeholder="Search..." />
+        <table>
+            <tr ng-repeat="cast in avengers.cast | filter: searchText | orderBy: 'name' " >
+                <td>{{cast.name}}</td>
+                <td>{{cast.character}}</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+    <script src="../../angular.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
